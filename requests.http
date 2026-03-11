@@ -1,0 +1,29 @@
+@baseUrl = http://localhost:5000
+
+### Obtener todos los todos
+GET {{baseUrl}}/todos
+
+### Obtener un todo por ID (ejemplo: id=2)
+GET {{baseUrl}}/todos/1
+
+### Crear un nuevo todo
+POST {{baseUrl}}/todos
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Buy groceries",
+    "dueDate": "2024-07-01T12:00:00",
+    "isComplete": false
+}
+
+### (Opcional) Probar con ID duplicado o datos inválidos
+POST {{baseUrl}}/todos
+Content-Type: application/json
+
+{
+    "id": 10,
+    "name": "probando",
+    "dueDate": "2024-07-02",
+    "isComplete": false
+}
