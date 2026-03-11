@@ -11,7 +11,7 @@ POST {{baseUrl}}/todos
 Content-Type: application/json
 
 {
-    "id": 1,
+    "id": 10,
     "name": "Buy groceries",
     "dueDate": "2024-07-01T12:00:00",
     "isComplete": false
@@ -27,3 +27,6 @@ Content-Type: application/json
     "dueDate": "2024-07-02",
     "isComplete": false
 }
+###
+DELETE {{baseUrl}}/todos/10
+
